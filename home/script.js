@@ -1,2 +1,10 @@
-// document.body.innerHTML =
-//   "<h1>Welcome to My Portfolio</h1><p>This is a simple portfolio page.</p>";
+$("document").ready(function () {
+  // about section
+  $("#about").css({ opacity: 0 });
+  $("#about").on("mouseenter", function () {
+    $("#about").animate({ opacity: 1 });
+  });
+  $("#about").on("mouseleave", function () {
+    $("#about").animate({ opacity: 0 });
+  });
+});

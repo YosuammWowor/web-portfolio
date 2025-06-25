@@ -9,6 +9,10 @@ body {
   padding: 0 50px;
 }
 
+body > section {
+  height: 100vh;
+}
+
 /* Hero Section */
 .hero-contents > * {
   margin: 25px 0;
@@ -105,6 +109,12 @@ body {
 }
 
 /* About Section */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #about .row .col > * {
   margin: 25px 0;
 }
