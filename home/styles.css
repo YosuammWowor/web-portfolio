@@ -80,6 +80,7 @@ body > section {
 
   color: inherit;
   border: 2px solid #f8f9fa;
+  border-radius: 50%;
   transition: color 0.5s, border-color 0.5s;
 }
 .hero-sosmed > a:hover {
@@ -121,4 +122,48 @@ body > section {
 
 .about-content {
   text-align: justify;
+}
+
+/* Skill section */
+#skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skill .row > * {
+  margin: 25px 0;
+}
+
+#skill-links a {
+  cursor: pointer;
+  font-size: 50px;
+  padding: 20px;
+  margin: 0 15px;
+
+  color: inherit;
+  border: 2px solid #f8f9fa;
+  border-radius: 5%;
+  transition: color 0.5s, border-color 0.5s;
+}
+
+#skill-links a:nth-child(1):hover,
+#skill-links a:nth-child(1):focus {
+  color: #ffc107;
+  border-color: #ffc107;
+}
+#skill-links a:nth-child(2):hover,
+#skill-links a:nth-child(2):focus {
+  color: #062ef5;
+  border-color: #062ef5;
+}
+#skill-links a:nth-child(3):hover,
+#skill-links a:nth-child(3):focus {
+  color: #ed3500;
+  border-color: #ed3500;
+}
+#skill-links a:nth-child(4):hover,
+#skill-links a:nth-child(4):focus {
+  color: #06923e;
+  border-color: #06923e;
 }
