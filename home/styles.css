@@ -13,6 +13,15 @@ body > section {
   height: 100vh;
 }
 
+body > section .row {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+body > section .row.visible {
+  opacity: 1;
+}
+
 /* Hero Section */
 .hero-contents > * {
   margin: 25px 0;

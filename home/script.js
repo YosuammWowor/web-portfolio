@@ -1,17 +1,19 @@
 $("document").ready(function () {
-  // about section
-  sectionBlur("#about");
+  $(window).on("scroll resize", function () {
+    $("body > section .row").each(function () {
+      let viewportTop = $(window).scrollTop();
+      let viewportBottom = viewportTop + $(window).height();
 
-  // about section
-  sectionBlur("#skill");
+      let elementTop = $(this).offset().top;
+      let elementBottom = elementTop + $(this).outerHeight();
+
+      if (elementBottom > viewportTop && elementTop < viewportBottom) {
+        $(this).addClass("visible");
+      } else {
+        $(this).removeClass("visible");
+      }
+    });
+  });
+
+  $(window).trigger("scroll");
 });
-
-function sectionBlur(id) {
-  $(id).css({ opacity: 0 });
-  $(id).on("mouseenter", function () {
-    $(id).animate({ opacity: 1 });
-  });
-  $(id).on("mouseleave", function () {
-    $(id).animate({ opacity: 0 });
-  });
-}
