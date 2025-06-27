@@ -5,11 +5,8 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
-  padding: 0 50px;
-}
-
 body > section {
+  padding: 0 50px;
   height: 100vh;
 }
 
@@ -175,4 +172,30 @@ body > section .row.visible {
 #skill-links a:nth-child(4):focus {
   color: #06923e;
   border-color: #06923e;
+}
+
+/* Contact section */
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .row .col-12:nth-child(2) {
+  margin-top: 20px;
+  padding: 20px;
+
+  border-radius: 10px;
+  text-align: left;
+  background-color: #000;
+  box-shadow: 0 0 25px #ffc107;
+}
+#contact .row .col-12:nth-child(2) button {
+  padding: 5px;
+  width: 100%;
+
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  background-color: #ffc107;
 }
