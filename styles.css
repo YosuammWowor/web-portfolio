@@ -79,10 +79,10 @@ body > section .row.visible {
 }
 
 .hero-sosmed > a {
-  cursor: pointer;
+  display: inline-block;
   font-size: 20px;
-  padding: 10px;
-  margin-right: 10px;
+  padding: 15px;
+  margin: 20px 15px 20px 0;
 
   color: inherit;
   border: 2px solid #f8f9fa;
@@ -94,15 +94,19 @@ body > section .row.visible {
   border-color: #ffc107;
 }
 
-.hero-contents > button {
+.hero-contents > a {
+  cursor: pointer;
+  text-decoration: none;
+
   padding: 10px;
   border: 1px solid #ffc107;
+  border-radius: 5px;
 
   color: #ffc107;
   background-color: transparent;
   transition: color 0.5s, background-color 0.5s;
 }
-.hero-contents > button:hover {
+.hero-contents > a:hover {
   color: #212529;
   background-color: #ffc107;
 }
@@ -137,15 +141,13 @@ body > section .row.visible {
   align-items: center;
 }
 
-#skill .row > * {
-  margin: 25px 0;
-}
-
 #skill-links a {
+  display: inline-block;
   cursor: pointer;
+
   font-size: 50px;
   padding: 20px;
-  margin: 0 15px;
+  margin: 20px;
 
   color: inherit;
   border: 2px solid #f8f9fa;
